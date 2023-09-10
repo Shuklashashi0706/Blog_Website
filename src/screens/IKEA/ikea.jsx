@@ -8,7 +8,7 @@ import profile from "../../assets/img/profile/profile.jpg";
 import Tag from "../../components/tag_card/tag"
 const home = () => {
   return (
-    <div className="h-[2500px] md:h-[1200px] md:mt-10">
+    <div className="h-[2100px] md:h-[1200px] md:mt-10">
       <p className=" text-center text-2xl  font-mono ">Welcome to the blog of <span className="bg-black text-white">unknown</span></p>
       <div className=" flex flex-col md:grid md:grid-cols-3 md:gap-2  ">
         <div className=" md:col-span-2 md:h-[1000px] m-1">
