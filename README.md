@@ -15,7 +15,8 @@ Welcome to My Blog Website, a platform where you can explore and read blogs on v
 - Tailwind CSS:Tailwind CSS is a highly customizable CSS framework that allows developers to rapidly build user interfaces with minimal effort.
 
 ## Website Link:
-https://blog-website-nine-eosin.vercel.ap
+
+https://blog-website-nine-eosin.vercel.app/
 
 ##Demo video :
 
