@@ -18,6 +18,6 @@ Welcome to My Blog Website, a platform where you can explore and read blogs on v
 https://blog-website-nine-eosin.vercel.ap
 
 ## Authors
-- [@Shuklashashi0706](https://www.github.com/Shuklashashi0706)
+- [@Shuklashashi0706](https://blog-website-nine-eosin.vercel.app/)
 
 
