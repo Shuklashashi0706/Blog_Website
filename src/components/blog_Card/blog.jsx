@@ -31,8 +31,8 @@ const blog = (props) => {
           className={
             pop
               ? show
-                ? " z-0 bg-[#6B8BB3] text-white shadow-xl  md:h-[500px] md:ml-[100px]  mb-[25px]"
-                :  "z-0 bg-[#6B8BB3] text-white shadow-xl  md:h-[410px] md:ml-[100px]  mb-[25px]"
+                ? " z-0 bg-[#6B8BB3] text-white shadow-xl md:h-[500px] md:ml-[100px]  mb-[25px]"
+                :  "z-0 bg-[#6B8BB3] text-white shadow-xl h-[415px] md:h-[410px] md:ml-[100px]  mb-[25px]"
               : "z-0 bg-[#6B8BB3] text-white shadow-xl  md:h-[570px] md:ml-[100px]  mb-[25px]"
           }
         >
@@ -41,7 +41,7 @@ const blog = (props) => {
               className="absolute inset-0 w-full h-full object-cover   "
               src={props.img}
               alt="img"
-            />  
+            />
           </div>
           <div className="p-2 ">
             <h2 className="font-bold text-2xl ">{props.title}</h2>
