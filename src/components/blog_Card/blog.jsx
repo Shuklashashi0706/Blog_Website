@@ -5,9 +5,10 @@ const blog = (props) => {
   const [pop, setPop] = useState(true);
   const [string, setString] = useState("");
   const [array, setArray] = useState([]);
-  const [show,setShow] = useState(false);
-  function handleShow(){  
+  const [show, setShow] = useState(false);
+  function handleShow() {
     setShow(!show);
+    setPop(true); // Turn off comments when Show More is clicked
   }
   function handleInput(event) {
     setString(event.target.value);
@@ -21,6 +22,7 @@ const blog = (props) => {
   }
   function handlePop() {
     setPop(!pop);
+    setShow(false); // Turn off Show More when Comments are clicked
   }
   return (
     <>
@@ -28,8 +30,10 @@ const blog = (props) => {
         <div
           className={
             pop
-              ? "z-0 bg-[#6B8BB3] text-white shadow-xl  md:h-[410px] md:ml-[100px]  mb-[25px]"
-              : "z-0 bg-[#6B8BB3] text-white shadow-xl  md:h-[565px] md:ml-[100px]  mb-[25px]"
+              ? show
+                ? " z-0 bg-[#6B8BB3] text-white shadow-xl  md:h-[500px] md:ml-[100px]  mb-[25px]"
+                :  "z-0 bg-[#6B8BB3] text-white shadow-xl  md:h-[410px] md:ml-[100px]  mb-[25px]"
+              : "z-0 bg-[#6B8BB3] text-white shadow-xl  md:h-[570px] md:ml-[100px]  mb-[25px]"
           }
         >
           <div className=" relative h-[300px] w-full ">
@@ -37,7 +41,7 @@ const blog = (props) => {
               className="absolute inset-0 w-full h-full object-cover   "
               src={props.img}
               alt="img"
-            />
+            />  
           </div>
           <div className="p-2 ">
             <h2 className="font-bold text-2xl ">{props.title}</h2>
