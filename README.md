@@ -17,6 +17,29 @@ Welcome to My Blog Website, a platform where you can explore and read blogs on v
 ## Website Link:
 https://blog-website-nine-eosin.vercel.ap
 
+
+## Installation
+Installation
+To run this project locally, follow these steps:
+
+1)Clone the repository:
+
+git clone https://github.com/Shuklashashi0706/Blog_Website.git
+
+2)Change into the project directory:
+
+cd .\vite-project\
+
+3)Install dependencies using npm:
+
+npm install
+
+
+4)Start the development server:
+
+npm run dev
+
+
 ## Authors
 - [@Shuklashashi0706](https://blog-website-nine-eosin.vercel.app/)
 
