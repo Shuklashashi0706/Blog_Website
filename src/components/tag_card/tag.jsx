@@ -1,5 +1,6 @@
 import React from "react";
 import Btn from "./tag_btn";
+import {Link} from "react-router-dom";
 const tag = () => {
   return (
     <>
@@ -10,12 +11,12 @@ const tag = () => {
           </div>
           <div className=" p-1 flex flex-col ">
             <div className="grid grid-cols-6 mb-2 gap-2">
-              <Btn title="Travel" />
+              <Link to="/travel"><Btn title="Travel"/></Link>
+              <Link to="/ikea"><Btn title="IKEA"/></Link>
+              <Link to="/diy"><Btn title="DIY"/></Link>
               <Btn title="USA" />
               <Btn title="London" />
-              <Btn title="IKEA" />
               <Btn title="Norway" />
-              <Btn title="DIY" />
             </div>
             <div className="grid grid-cols-4 mb-2">
               <Btn title="Family" />
