@@ -35,10 +35,6 @@ To run this project locally, follow these steps:
 
 git clone https://github.com/Shuklashashi0706/Blog_Website.git
 
-2)Change into the project directory:
-
-cd .\vite-project\
-
 3)Install dependencies using npm:
 
 npm install
