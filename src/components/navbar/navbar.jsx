@@ -1,20 +1,45 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Logo from "../../assets/logo/logo.png"
-const navbar = () => {
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/logo/logo.png";
+import userLogo from "../../assets/logo/profile_icon.svg";
+import writeLogo from "../../assets/logo/write.svg";
+import search from "../../assets/logo/search.svg";
+const Navbar = () => {
   return (
-    <>
-        <div className=" h-[80px] bg-[#f1aa5c] ">
-            <nav className='flex items-center md: justify-between '>
-                <img className="h-[80px] w-[80px] ml-3" src={Logo} alt="" />
-                <h1 className=' text-[38px] md:text-5xl font-semibold mt-[8px] '>My Blog</h1>
-                <ul>
-                    <li className='text-3xl font-semibold mr-[2px] md:mr-[30px] mt-[15px] bg-black text-white py-[3px] px-2 rounded-[2.5px] '><Link to="/">HOME</Link></li>
-                </ul>
-            </nav>
+    <div className="bg-[#f1aa5c]">
+      <nav className="container mx-auto flex items-center justify-between py-2 md:py-1">
+        <div className="flex items-center">
+          <Link to="/">
+            <img className="h-14 md:h-20" src={Logo} alt="" />
+          </Link>
+          <div className="border border-black bg-gray-100 h-[35px] w-[200px] flex rounded-[15px] overflow-hidden ">
+            <img className="h-10 md:h-[30px]" src={search} alt="" />
+            <input className="w-[168px] " placeholder="Search..." type="text" />
+          </div>
         </div>
-    </>
-  )
-}
+        <ul className="flex items-center">
+          <li className="mr-4 md:mr-6">
+            <Link
+              to="/"
+              className="text-xl md:text-3xl font-semibold text-white hover:text-gray-200 transition duration-300"
+            >
+              HOME
+            </Link>
+          </li>
+          <li>
+            <Link to="/newstory">
+              <img className="h-5 md:h-10 md:mx-3" src={writeLogo} alt="" />
+            </Link>
+          </li>
+          <li>
+            <Link to="/user">
+              <img className="h-10 md:h-14 mr-2 " src={userLogo} alt="" />
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
 
-export default navbar
+export default Navbar;
