@@ -26,6 +26,14 @@ const Navbar = () => {
               HOME
             </Link>
           </li>
+          <li className="mr-4 md:mr-6">
+            <Link
+              to="/login"
+              className="text-xl md:text-3xl font-semibold text-white hover:text-gray-200 transition duration-300"
+            >
+              Login
+            </Link>
+          </li>
           <li>
             <Link to="/newstory">
               <img className="h-5 md:h-10 md:mx-3" src={writeLogo} alt="" />
